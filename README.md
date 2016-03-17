@@ -1,2 +1,3 @@
-# beerwood
-Basekit V8 Template
+# Wellington
+
+Basekit Amazon V8 Template

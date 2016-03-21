@@ -2,6 +2,10 @@
 // Wellington: Fork Changes
 // --------------------------------
 
+
+// Page Styles
+// --------------------------------
+
 .template-content.container {
     position: relative;
     background-color: @color__body--background;
@@ -11,6 +15,16 @@
     @media @bp-desktop {
         margin-top: 0;
     }
+}
+
+
+// Navigation
+// --------------------------------
+
+.header-extendednavigation {
+    box-shadow: none;
+    background-image: none;
+    background-color: @color__navigation--background;
 }
 
 .navigation-item.selected > .item-name {
@@ -32,6 +46,10 @@
     color: @color__navigation--text;
 }
 
+
+// Feature
+// --------------------------------
+
 .feature__content-wrap {
     vertical-align: middle;
 }
@@ -49,12 +67,6 @@
     }
 }
 
-.header-extendednavigation {
-    box-shadow: none;
-    background-image: none;
-    background-color: @color__navigation--background;
-}
-
 .feature__button {
     background-color: @color__feature-button--background!important;
     color: @color__feature-button--text;
@@ -64,14 +76,6 @@
         background-color: darken(@color__feature-button--background,100%)!important;
         color: lighten(@color__feature-button--text,100%);
     }
-}
-
-.button,
-button,
-.blogpostlist__read-more {
-    box-shadow: none;
-    background-image: none;
-    background-color: @color__button--background;
 }
 
 .feature:after {
@@ -96,6 +100,18 @@ button,
         left: 10px;
         right: 10px;
     }
+}
+
+
+// Widgets
+// --------------------------------
+
+.button,
+button,
+.blogpostlist__read-more {
+    box-shadow: none;
+    background-image: none;
+    background-color: @color__button--background;
 }
 
 .twitter__account-link:hover {

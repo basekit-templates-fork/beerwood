@@ -15,7 +15,7 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#eeeeef",
-            "color3":"#4ba614",
+            "color3":"#000000",
             "color4":"#000000",
             "color5":"#9f9f9f",
             "color6":"#313131",
@@ -61,31 +61,31 @@
     "fontSwatch": {
        "title": "Montserrat, Lato, sans-serif",
         "font1": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Georgia\", serif",
             "font-size": "36px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "46px",
             "color": "@color-swatch4",
             "letter-spacing": "0px"
         },
         "font2": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Georgia\", serif",
             "font-size": "30px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "0px"
         },
         "font3": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Georgia\", serif",
             "font-size": "24px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "0px"
         },
         "font4": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Georgia\", serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "28px",
@@ -101,9 +101,9 @@
             "letter-spacing": "0px"
         },
         "font6": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Georgia\", serif",
             "font-size": "16px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch1",
             "color-hover": "@color-swatch1",
@@ -122,27 +122,27 @@
             "background-color-hover": "darken(@color-swatch1,10%)"
         },
         "font8": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "54px",
-            "font-weight": "700",
+            "font-weight": "200",
             "line-height": "64px",
             "color": "@color-swatch1",
             "letter-spacing": "0px"
         },
         "font9": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "18px",
+            "font-size": "16px",
             "font-weight": "300",
-            "line-height": "34px",
+            "line-height": "32px",
             "color": "@color-swatch1",
             "letter-spacing": "0px"
         },
         "font10": {
-            "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Georgia\", serif",
             "font-size": "30px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "40px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch1",
             "letter-spacing": "0px"
         }
     },
@@ -196,11 +196,11 @@
             "font__p--letter-spacing" : "@font-swatch5-letter-spacing"
         },
         "feature": {
-            "color__feature-content--background" : "fade(@color-swatch4,50%)",
+            "color__feature-content--background" : "black",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-button--text": "@font-swatch8-color",
-            "color__feature-button--background": "@color-swatch3",
+            "color__feature-button--text": "black",
+            "color__feature-button--background": "@color-swatch1",
             "color__feature-button--background--hover": "darken(@color-swatch3,10%)",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "@font-swatch8-font-size",
@@ -214,11 +214,12 @@
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
         },
         "navigation": {
-            "color__navigation--background": "@color-swatch3",
+            "color__navigation--background": "transparent",
             "color__navigation--text": "@font-swatch6-color",
-            "color__navigation--text--selected": "@color-swatch1",
-            "color__navigation--text--hover": "@color-swatch1",
-            "color__navigation-list--background": "@color-swatch4", 
+            "color__navigation--text--selected": "@color-swatch4",
+            "color__navigation--text--hover": "@color-swatch4",
+            "color__navigation-list--background": "@color-swatch4",
+            "color__navigation--text--selected": "@color-swatch4", 
             "font__navigation--font-family": "@font-swatch6-font-family",
             "font__navigation--font-size": "16px",
             "font__navigation--font-weight": "@font-swatch6-font-weight",
@@ -226,8 +227,8 @@
             "font__navigation--letter-spacing": "@font-swatch6-letter-spacing"
         },
         "button": {
-            "color__button--background": "@color-swatch3",
-            "color__button--background--hover": "darken(@color-swatch3,10%)",
+            "color__button--background": "@color-swatch4",
+            "color__button--background--hover": "lighten(@color-swatch4,20%)",
             "color__button--text": "@color-swatch1",
             "font__button--font-family": "@font-swatch7-font-family",
             "font__button--font-size": "@font-swatch7-font-size",

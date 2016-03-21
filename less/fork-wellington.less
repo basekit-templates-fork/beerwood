@@ -4,7 +4,7 @@
 
 .template-content.container {
     position: relative;
-    background-color: white;
+    background-color: @color__body--background;
     margin-top: -50px;
     z-index: 9;
     padding-top: 50px;
@@ -14,7 +14,7 @@
 }
 
 .navigation-item.selected > .item-name {
-    color: @color__navigation--text--selected;
+    color: @color__navigation--text--hover;
     @media @tablet {
         color: @color__navigation--text;
     }

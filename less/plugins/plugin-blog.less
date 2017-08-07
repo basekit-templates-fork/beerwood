@@ -2,8 +2,6 @@
 // Wellington: plugin-blog.less
 // --------------------------------
 
-
-
 // --------------------------------
 // Blog Post List
 // --------------------------------
@@ -25,7 +23,9 @@
         .justify-content(@justify: space-between);
         .flex-wrap(@wrap: wrap);
 
-
+        .post-content + .post-image {
+            padding: 20px 40px;
+        }
 
 
         &:nth-of-type(even) {
@@ -36,7 +36,6 @@
 
             .post-content {
                 .flex-order(@order: 0);
-                padding: 20px 0;
             }
 
 
@@ -88,9 +87,11 @@
                 -ms-flex: 1 0 45%;
                     flex: 1 0 45%;
             .flex-order(@order: 1);
-
             padding: 20px 40px;
-            
+        }
+
+        .post-image + .post-content {
+            padding: 20px 40px;
         }
 
 
@@ -163,7 +164,6 @@
                 }
             }
         }
-
 
 
 

@@ -180,7 +180,7 @@
             margin: 0;
             visibility: hidden;
 
-            &.open {
+            .open & {
                 visibility: visible;
             }
         }
@@ -233,7 +233,8 @@
     // Hides navigation until toggled
     .navigation-list {
         margin: 0;
-            &.open {
+
+            .open & {
                 display: block;
             }
     }
@@ -323,6 +324,12 @@
             }
     }
 }
+
+
+[data-widget-type="extendednavigation"] .widget-overlay {
+    display: none;
+}
+
 
 // Editor Navigation Overlay Settings
 [data-widget-type="extendednavigation"] .widget-overlay .widget__list {

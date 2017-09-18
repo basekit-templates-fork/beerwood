@@ -180,7 +180,7 @@
             margin: 0;
             visibility: hidden;
 
-            &.open {
+            .open & {
                 visibility: visible;
             }
         }
@@ -233,7 +233,8 @@
     // Hides navigation until toggled
     .navigation-list {
         margin: 0;
-            &.open {
+
+            .open & {
                 display: block;
             }
     }
@@ -256,7 +257,7 @@
 
 
     // Navigation item when nav is open
-    .navigation-list.open {
+    .open .navigation-list {
       .transform(@x:0, @y:0);
 
       .navigation-item {
@@ -322,15 +323,23 @@
                 visibility: visible;
             }
     }
-}
 
-// Editor Navigation Overlay Settings
-[data-widget-type="extendednavigation"] .widget-overlay .widget__list {
-   @media @mobile {
-        left: -90px !important;
-        position: absolute;
+    [data-widget-type="extendednavigation"] .widget-overlay {
+        display: none;
+    }
+
+    .noscroll [data-widget-type="extendednavigation"] .widget-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
     }
 }
+
 
 
 // Navigation Toggle

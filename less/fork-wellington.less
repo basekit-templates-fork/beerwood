@@ -17,9 +17,15 @@
     }
 }
 
-.bk-pt-default .header-wrapper {
+.bk-pt-default .header-wrapper,
+.header-wrapper {
     background-color: @color__header--background;
 }
+
+[data-widget-type="feature"]:not(.bk-tpl-hidden) + .template-header .header-wrapper {
+    background-color: transparent;
+}
+
 
 
 // Navigation
@@ -53,6 +59,10 @@
 
 // Feature
 // --------------------------------
+
+[data-widget-type="feature"] {
+    z-index: 1;
+}
 
 .feature__content-wrap {
     vertical-align: middle;
